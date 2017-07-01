@@ -1,3 +1,5 @@
+-- Script para MYSQL
+
 CREATE SCHEMA IF NOT EXISTS `museu` DEFAULT CHARACTER SET utf8 ;
 USE `museu` ;
 
@@ -8,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `museu`.`Artista` (
   `id_Artista` INT NOT NULL AUTO_INCREMENT,
   `data_nasc` VARCHAR(10) NOT NULL,
   `nome` VARCHAR(50) NOT NULL,
-  `data_falecimento` VARCHAR(10) NOT NULL,
+  `data_falecimento` VARCHAR(10),
   `pais` VARCHAR(20) NOT NULL,
   `estilo_principal` VARCHAR(30) NOT NULL,
   PRIMARY KEY (`id_Artista`))
